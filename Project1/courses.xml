@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<courses>
+  <course>
+    <name>System Analysis and Design</name>
+    <professor>Evan Enke</professor>
+    <semester>4</semester>
+    <courseCoverage />
+  </course>
+  <course>
+    <name>Intro to Webpage Development</name>
+    <professor>David Law</professor>
+    <semester>3</semester>
+    <courseCoverage />
+  </course>
+  <course>
+    <name>Programming 1</name>
+    <professor>Micheal Spear</professor>
+    <semester>2</semester>
+    <courseCoverage />
+  </course>
+  <course>
+    <name>Programming III: Data Structures</name>
+    <professor>David Law</professor>
+    <semester>5</semester>
+    <courseCoverage />
+  </course>
+  <course>
+    <name>Database Concepts</name>
+    <professor>Ronald Keeney</professor>
+    <semester>3</semester>
+    <courseCoverage />
+  </course>
+  <course>
+    <name>Programming II</name>
+    <professor>Ronald Keeney</professor>
+    <semester>4</semester>
+    <courseCoverage />
+  </course>
+  <course>
+    <name>Database Applications and Programming I</name>
+    <professor>David Law</professor>
+    <semester>2</semester>
+    <courseCoverage />
+  </course>
+  <course>
+    <name>Scientifc Programming</name>
+    <professor>David Law</professor>
+    <semester>5</semester>
+    <courseCoverage />
+  </course>
+  <course>
+    <name>Essentials of Information Security</name>
+    <professor>Scott O'Conner</professor>
+    <semester>3</semester>
+    <courseCoverage />
+  </course>
+  <course>
+    <name>Web Programming I</name>
+    <professor>Micheal Spear</professor>
+    <semester>5</semester>
+    <courseCoverage />
+  </course>
+</courses>
