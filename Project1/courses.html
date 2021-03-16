@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Future Employment</title>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+  </head>
+  <body>
+    <div id="showCourse"></div>
+    <br />
+    <input type="button" onclick="previous()" value="Previous" />
+    <input type="button" onclick="next()" value="Next" />
+
+    <script>
+      var i = 0;
+      var xml;
+      getCourseData(i);
+
+      function getCourseData(i) {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            displayCourseData(this, i);
+          }
+        };
+        xmlhttp.open("GET", "books.xml", true);
+        xmlhttp.send();
+      }
+
+      function displayCourseData(xmlData, i) {
+        var xmlDoc = xmlData.responseXML;
+        xml = xmlDoc.getElementsByTagName("course");
+        document.getElementById("showCourse").innerHTML = 
+          ""
+      }
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="css/aboutXml.css"?>
+<about>
+  <hobbies>
+    <hobby>Playing Video Games</hobby>
+    <hobby>Watching TV</hobby>
+    <hobby>Listening to Music</hobby>
+  </hobbies>
+  <musicGenres>
+    <musGenre>Classic Metal</musGenre>
+    <musGenre>New Wave of British Heavy Metal</musGenre>
+    <musGenre>Thrash Metal</musGenre>
+    <musGenre>Black Metal</musGenre>
+    <musGenre>Classic Rock</musGenre>
+    <musGenre>Hard Rock</musGenre>
+  </musicGenres>
+  <videoGameGenres>
+    <vgGenre>Role Playing Games</vgGenre>
+    <vgGenre>First Person Shooter</vgGenre>
+    <vgGenre>Third Person Shooter</vgGenre>
+    <vgGenre>Action</vgGenre>
+    <vgGenre>Adventure</vgGenre>
+  </videoGameGenres>
+  <televisionGenres>
+    <tvGenre>Anime</tvGenre>
+    <tvGenre>Drama</tvGenre>
+    <tvGenre>Adult Animation</tvGenre>
+    <tvGenre>Comedy</tvGenre>
+  </televisionGenres>
+</about>

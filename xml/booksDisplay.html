@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Display Book Data</title>
+    <style>
+      table {
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" onclick="loadXMLData()">See my library</button>
+    <br />
+    <!-- data table -->
+    <table id="showBooks"></table>
+    <script>
+      function loadXMLData() {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+          // Status Code 4 = obj created and accept data (created without errors)
+          // 200 everything in server works
+          // 500 server error
+          // 400 error client error
+          // 000 no client statment
+          if (this.readyState == 4 && this.status == 200) {
+            //this is active data
+            displayBooks(this);
+          }
+        };
+        // layer 1 sourcing = same server same directory
+        // layer 2 same server different directory
+        xmlhttp.open("GET", "books.xml", true);
+        xmlhttp.send();
+      }
+
+      function displayBooks(xmlData) {
+        var i;
+        var xmlDoc = xmlData.responseXML; // client side data service
+        var table = "<tr><th>Author</th><th>Title</th></tr>";
+
+        var xml = xmlDoc.getElementsByTagName("book");
+        for (i = 0; i < xml.length; i++) {
+          // node made up of element and value
+          table +=
+            "<tr><td>" +
+            xml[i].getElementsByTagName("author")[0].childNodes[0].nodeValue +
+            "</td><td>" +
+            xml[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+            "</td></tr>";
+        }
+        document.getElementById("showBooks").innerHTML = table;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    <book category="Children">
+        <title lang="en">Judy Moody</title>
+        <author>Some Author</author>
+        <year>2012</year>
+        <price>30.00</price>
+    </book>
+    <book category="Cooking">
+        <title lang="en">Everyday Italian</title>
+        <author>Gina De Laurentis</author>
+        <year>2012</year>
+        <price>30.00</price>
+    </book>
+    <book category="Fantasy">
+        <title lang="en">The Gutter Saint</title>
+        <author>Bryan Sanderson</author>
+        <year>2013</year>
+        <price>25.00</price>
+    </book>
+    <book category="Fiction">
+        <title lang="en">To Kill a Mockingbird</title>
+        <author>Harper Lee</author>
+        <year>1950</year>
+        <price>5.00</price>
+    </book>
+</bookstore>

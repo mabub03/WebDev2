@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="css/informationXml.css"?>
+<academicProgram>
+  <major>Application Software Development</major>
+  <career>
+    <name>Software Developer</name>
+  </career>
+  <career>
+    <name>Database Administrator</name>
+  </career>
+  <career>
+    <name>Network Support</name>
+  </career>
+  <career>
+    <name>Project Manager</name>
+  </career>
+  <career>
+    <name>User Support</name>
+  </career>
+  <career>
+    <name>Web Developer</name>
+  </career>
+  <career>
+    <name>IT Manager</name>
+  </career>
+  <career>
+    <name>Technology Sales</name>
+  </career>
+  <career>
+    <name>Tehnology Support</name>
+  </career>
+  <career>
+    <name>Software Engineer</name>
+  </career>
+  <technology>
+    <techName>C++</techName>
+  </technology>
+  <technology>
+    <techName>Java</techName>
+  </technology>
+  <technology>
+    <techName>JavaScript</techName>
+  </technology>
+  <technology>
+    <techName>PHP</techName>
+  </technology>
+  <technology>
+    <techName>CSS</techName>
+  </technology>
+  <technology>
+    <techName>HTML</techName>
+  </technology>
+  <technology>
+    <techName>C#</techName>
+  </technology>
+  <technology>
+    <techName>MySQL</techName>
+  </technology>
+  <technology>
+    <techName>Apache</techName>
+  </technology>
+  <technology>
+    <techName>Microsoft SQL Server</techName>
+  </technology>
+</academicProgram>

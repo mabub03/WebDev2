@@ -1,0 +1,19 @@
+academicProgram {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+major {
+    display: block;
+    font-size: 18pt;
+    color: red;
+}
+
+name {
+    display: list-item;
+    font-size: 16pt;
+}
+
+techName {
+    display: list-item;
+    font-size: 16pt;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playing Around with Ajax and Databases</title>
+    <script type="text/javascript">
+      function showStudent(selectedStudent) {
+        if (selectedStudent == "") {
+          document.getElementById(txtStudentInfo).innerHTML = "";
+          return;
+        } else {
+          if (window.XMLHttpRequest) {
+            var xmlhttp = new XMLHttpRequest();
+          } else {
+            var xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+          }
+
+          xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+              document.getElementById("txtStudentInfo").innerHTML = xmlhttp.responseText;
+            }
+          }
+          
+          xmlhttp.open("GET", "getStudentsDB.php?query=" + selectedStudent, true);
+          xmlhttp.send();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <p>
+      <form>
+        <select name="students" onchange="showStudent(this.value)">
+          <option value="">Select your favorite Student</option>
+          <option value="1">Joyce Chen</option>
+          <option value="2">Matthew Bub</option>
+          <option value="3">Gregory Roman</option>
+        </select> 
+      </form>
+    </p>
+    <p>
+      Selected Student Information:
+      <div id=txtStudentInfo></div>
+    </p>
+  </body>
+</html>
