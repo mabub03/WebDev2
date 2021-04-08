@@ -1,0 +1,18 @@
+HappyThoughts {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+HappyThought {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 15pt;
+    margin-left: 15pt;
+}
+
+quote {
+    display: list-item;
+}
+
+source {
+    display: list-item;
+}
